@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.box-grande-app {
+    height: 85vh;
+    min-width: 50%;
+    background-color: salmon;
+    margin: 50px;
+    display: flex;
+}
+
+.navbar {
+    /* background-color: rgba(234,234,234,255); */
+    background-color: blue;
+    height:100%;
+    width: 35%;
+}
+
+.navbar-up {
+    display: flex;
+    background-color: rgba(234,234,234,255);
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-up i {
+    margin: 10px;
+}
+
+.navbar-up .up-left {
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.navbar-middle {
+    background-color: aquamarine;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-middle i {
+    font-size: 20px;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-down {
+    background-color:  rgba(234,234,234,255);
+    height: 50px;
+}
+
+.inside-navbar-down {
+    margin: 5px;
+    background-color: white;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inside-navbar-down i {
+    border: 1px solid gray;
+    padding: 6px;
+}
+
+.place {
+    width: 90%;
+    height: 30px;
+}
+
+.navbar-chat {
+    margin: 5px;
+    background-color: white;
+    height: 80%;
+}
+
+.account {
+    background-color: salmon;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.chatbar {
+    height: 99%;
+    width: 65%;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+.chatbar-top {
+    width: 100%;
+    background-color: yellow;
+    height: 10%;
+}
+
+.chatbar-middle {
+    height: 83%;
+    background-color: lightgreen;
+    width: 100%;
+}
+
+.chatbar-down {
+    height: 6%;
+    background-color: brown;
+}
