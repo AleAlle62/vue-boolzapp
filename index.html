@@ -16,46 +16,90 @@
     <title>boolzapp</title>
 </head>
 <body>
-    
-    <!-- box grande di partenza -->
-    <div class="box-grande-app">
-        <!-- navbar laterale -->
-        <div class="navbar">
-            <!-- profilo -->
-            <div class="navbar-up">
-                <div class="up-left"><img src="img/avatar_1.jpg">
-                    <h3>Alessio Allegrini</h3>
-                </div>
-                <div class="icone">
-                    <i class="fa-solid fa-circle-notch"></i>
-                    <i class="fa-regular fa-message"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
+    <div id="app">
+<!-- box grande di partenza -->
+<div class="box-grande-app">
+    <!-- navbar laterale -->
+    <div class="navbar">
+        <!-- profilo -->
+        <div class="navbar-up">
+            <div class="up-left"><img src="img/avatar_1.jpg">
+                <h3>Alessio Allegrini</h3>
             </div>
-            <!-- notifiche messaggi -->
-            <div class="navbar-middle">
-                <i class="fa-solid fa-bell-slash"></i>
-                <h4>Ricevi notifiche di nuovi messaggi</h4>
-            </div>
-            <!-- cerca chat -->
-            <div class="navbar-down">
-                <div class="inside-navbar-down">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="cerca o inizia una nuova chat" class="place">
-                </div>
-            </div>
-            <!-- chat -->
-            <div class="navbar-chat">
-                <!-- account -->
-                <div class="account"></div>
+            <div class="icone">
+                <i class="fa-solid fa-circle-notch"></i>
+                <i class="fa-regular fa-message"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
             </div>
         </div>
-        <!-- inizio parte centrale -->
-        <div class="chatbar">
-            <div class="chatbar-top"></div>
-            <div class="chatbar-middle"></div>
-            <div class="chatbar-down"></div>
+        <!-- notifiche messaggi -->
+        <div class="navbar-middle">
+            <i class="fa-solid fa-bell-slash"></i>
+            <h4>Ricevi notifiche di nuovi messaggi</h4>
+        </div>
+        <!-- cerca chat -->
+        <div class="navbar-down">
+            <div class="inside-navbar-down">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="cerca o inizia una nuova chat" class="place">
+            </div>
+        </div>
+        <!-- chat -->
+        <div class="navbar-chat">
+            <!-- account -->
+
+            <div class="lista-vfor">
+                <div class="navbar-chat" v-for="(contact, i) in contacts">
+                    <div class="lista-vfor-dentro">
+                        <img class="img-chat" :src="contact.avatar" alt="">
+                        <div>{{contact.name}}</div>
+                    </div>                    
+                </div>
+            </div>
+
+
         </div>
     </div>
+
+
+<!-- fine navabar  -->
+<!-- inizio chat  -->
+
+
+
+    <!-- inizio parte centrale -->
+    <div class="chatbar">
+        <div class="chatbar-top">
+            <div class="left">
+                <h2>Michele</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-paperclip"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <!-- parte della chat grande  -->
+        <div class="chatbar-middle">
+            <div class="chat">
+                <p>hai portato fuori il cane</p>
+            </div>
+            <div class="chat">
+                <p>ricordati di stendere i panni</p>
+            </div>
+            <div class="chat2">
+                <p>ho fatto tutto!</p>
+            </div>
+        </div>
+        <!-- parte della scritta bassa  -->
+        <div class="chatbar-down">
+            <i class="fa-regular fa-face-smile"></i>
+            <input type="text" placeholder="scrivi un messaggio">
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+    </div>
+</div>
+    </div>
+    
 </body>
 </html>

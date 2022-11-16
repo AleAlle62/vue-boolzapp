@@ -89,16 +89,21 @@ img {
 .navbar-chat {
     margin: 5px;
     background-color: white;
-    height: 80%;
 }
 
-.account {
-    background-color: salmon;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+.lista-vfor{
+    overflow-y: scroll;
+    height: 800px;
 }
+.lista-vfor-dentro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid salmon;
+    height: 100px;
+}
+
+
 
 .chatbar {
     height: 99%;
@@ -109,17 +114,79 @@ img {
 
 .chatbar-top {
     width: 100%;
-    background-color: yellow;
-    height: 10%;
+    background-color:  rgba(234,234,234,255);
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.chatbar-top .left {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 20px
+}
+
+.chatbar-top i {
+    margin: 10px;
+    font-size: 20px;
+}
+
 
 .chatbar-middle {
     height: 83%;
-    background-color: lightgreen;
+    background-image: url(https://wallpapercave.com/wp/wp4014381.jpg);
     width: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
 }
+
+.chat {
+    background-color: blue;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.chat2 {
+    background-color: green;
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px;
+}
+
+.chat p {
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chat2 p {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;   
+}
+
+
+
+
 
 .chatbar-down {
     height: 6%;
-    background-color: brown;
+    background-color: rgba(234,234,234,255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chatbar-down input {
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.chatbar-down i {
+    font-size: 25px;
 }
