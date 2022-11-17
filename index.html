@@ -17,89 +17,118 @@
 </head>
 <body>
     <div id="app">
-<!-- box grande di partenza -->
-<div class="box-grande-app">
-    <!-- navbar laterale -->
-    <div class="navbar">
-        <!-- profilo -->
-        <div class="navbar-up">
-            <div class="up-left"><img src="img/avatar_1.jpg">
-                <h3>Alessio Allegrini</h3>
-            </div>
-            <div class="icone">
-                <i class="fa-solid fa-circle-notch"></i>
-                <i class="fa-regular fa-message"></i>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-        </div>
-        <!-- notifiche messaggi -->
-        <div class="navbar-middle">
-            <i class="fa-solid fa-bell-slash"></i>
-            <h4>Ricevi notifiche di nuovi messaggi</h4>
-        </div>
-        <!-- cerca chat -->
-        <div class="navbar-down">
-            <div class="inside-navbar-down">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="cerca o inizia una nuova chat" class="place">
-            </div>
-        </div>
-        <!-- chat -->
-        <div class="navbar-chat">
-            <!-- account -->
+        <!-- box grande di partenza -->
+        <div class="box-grande-app">
+            <!-- navbar laterale -->
+            <div class="navbar">
+                <!-- profilo -->
+                <div class="navbar-up">
+                    <div class="up-left"><img src="img/avatar_1.jpg">
+                        <h3>Alessio Allegrini</h3>
+                    </div>
+                    <div class="icone">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-regular fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <!-- notifiche messaggi -->
+                <div class="navbar-middle">
+                    <i class="fa-solid fa-bell-slash"></i>
+                    <h4>Ricevi notifiche di nuovi messaggi</h4>
+                </div>
+                <!-- cerca chat -->
+                <div class="navbar-down">
+                    <div class="inside-navbar-down">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="cerca o inizia una nuova chat" class="place">
+                    </div>
+                </div>
+                <!-- chat -->
+                <div class="navbar-chat">
+                    <!-- account -->
 
-            <div class="lista-vfor">
-                <div class="navbar-chat" v-for="(contact, i) in contacts">
-                    <div class="lista-vfor-dentro">
-                        <img class="img-chat" :src="contact.avatar" alt="">
-                        <div>{{contact.name}}</div>
-                    </div>                    
+                    <div class="lista-vfor">
+                        <!-- creazione del ciclo per far comprarire le immagini, e del click per cambiare il testo al suo click  -->
+                        <div class="navbar-chat" v-for="(contact, i) in contacts" @click = " chatSelezionata(i) " v-if = " contact.visible === true">
+                            <!-- se corrisponde a true allora appare, collegando index a currentindex = i  -->
+                            <div class="lista-vfor-dentro">
+                                <!-- immagine  -->
+                                <img class="img-chat" :src="contact.avatar" alt="">
+                                <!-- messaggio inviato -->
+                                <div>{{ contact.name + ': '+ contact.messages[contact.messages.length - 1].message }}</div>
+                                <!-- nome e messaggio + data  -->
+                                <div class="data">{{ contact.messages[contact.messages.length - 1].date }}</div>
+                            </div>                    
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 
 
+        <!-- fine navabar  -->
+        <!-- inizio chat  -->
+
+
+
+
+            <!-- inizio parte centrale -->
+            <div class="chatbar">
+                <div class="chatbar-top">
+                    <!-- immagine nome + ultimo accesso  -->
+                    <div class="left">
+                        <!-- ciclo per le immagini e testo -->
+                        <div  class="left" v-for="( contact , i ) in contacts" v-if=" i === currentIndex ">
+                            <img :src=" contact.avatar "> 
+                            <div>
+                                <!-- nome  -->
+                                <div>{{contact.name}}</div>
+                                <!-- ultimo accesso  -->
+                                <div class="online">online</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- parte destra  -->
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <!-- parte della chat grande  -->
+                <div class="chatbar-middle">
+                    <div class="chat">
+                        <!-- ciclo per far apparire gli ultimi messaggi  -->
+                        <div class = "chat" v-for = "( contact , i ) in contacts" v-if = " i === currentIndex ">
+                            <div v-for = " message in contact.messages " :class = "message.status ==='received'? 'recived':'send'" >
+                                <div>{{message.message}}</div>
+                                <div class="data">{{ message.date}}</div>                           
+                                <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>           
+                    </div>
+                </div>
+
+                <!-- parte della scritta bassa  -->
+                <div class="chatbar-down">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <!-- invio del messaggio al invio del bottone 'invio' -->
+                        <input @keyup.enter="aggiungiMessaggioInvio" placeholder="invia un messaggio" v-model="newText">
+                        <!-- bottone invias -->
+                        <div @click = " aggiungiMessaggioInvio "><i class="fa-regular fa-paper-plane"></i></div>
+                    <i class="fa-solid fa-microphone"></i> 
+                </div>
+            </div>
+            <!-- fine chat  -->
         </div>
-    </div>
-
-
-<!-- fine navabar  -->
-<!-- inizio chat  -->
-
-
-
-    <!-- inizio parte centrale -->
-    <div class="chatbar">
-        <div class="chatbar-top">
-            <div class="left">
-                <h2>Michele</h2>
-            </div>
-            <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-paperclip"></i>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-        </div>
-        <!-- parte della chat grande  -->
-        <div class="chatbar-middle">
-            <div class="chat">
-                <p>hai portato fuori il cane</p>
-            </div>
-            <div class="chat">
-                <p>ricordati di stendere i panni</p>
-            </div>
-            <div class="chat2">
-                <p>ho fatto tutto!</p>
-            </div>
-        </div>
-        <!-- parte della scritta bassa  -->
-        <div class="chatbar-down">
-            <i class="fa-regular fa-face-smile"></i>
-            <input type="text" placeholder="scrivi un messaggio">
-            <i class="fa-solid fa-microphone"></i>
-        </div>
-    </div>
-</div>
     </div>
     
 </body>
 </html>
+
+
+

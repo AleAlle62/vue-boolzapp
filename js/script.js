@@ -50,7 +50,7 @@ new Vue ({
 				],
 			}, 
 			{
-				name: 'Alessandro B.',
+				name: 'Alessandro B',
 				avatar: 'img/avatar_4.jpg',
 				visible: true,
 				messages: 
@@ -68,7 +68,7 @@ new Vue ({
 				],
 			}, 
 			{
-				name: 'Alessandro L.',
+				name: 'Alessandro L',
 				avatar: 'img/avatar_5.jpg',
 				visible: true,
 				messages: 
@@ -150,227 +150,39 @@ new Vue ({
 						status: 'received'
 					}
 				],
-			},
-            {
-				name: 'Davide',
-				avatar: 'img/avatar_8.jpg',
-				visible: true,
-				messages: 
-				[
-					{
-						date: '10/01/2020 15:30:55',
-						message: 'Ciao, andiamo a mangiare la pizza stasera?',
-						status: 'received'
-					}, 
-					{
-						date: '10/01/2020 15:50:00',
-						message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-						status: 'sent'
-			
-					}, 
-					{
-						date: '10/01/2020 15:51:00',
-						message: 'OK!!',
-						status: 'received'
-					}
-				],
-			},
-            {
-				name: 'Davide',
-				avatar: 'img/avatar_8.jpg',
-				visible: true,
-				messages: 
-				[
-					{
-						date: '10/01/2020 15:30:55',
-						message: 'Ciao, andiamo a mangiare la pizza stasera?',
-						status: 'received'
-					}, 
-					{
-						date: '10/01/2020 15:50:00',
-						message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-						status: 'sent'
-			
-					}, 
-					{
-						date: '10/01/2020 15:51:00',
-						message: 'OK!!',
-						status: 'received'
-					}
-				],
-			},
-            {
-				name: 'Davide',
-				avatar: 'img/avatar_8.jpg',
-				visible: true,
-				messages: 
-				[
-					{
-						date: '10/01/2020 15:30:55',
-						message: 'Ciao, andiamo a mangiare la pizza stasera?',
-						status: 'received'
-					}, 
-					{
-						date: '10/01/2020 15:50:00',
-						message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-						status: 'sent'
-			
-					}, 
-					{
-						date: '10/01/2020 15:51:00',
-						message: 'OK!!',
-						status: 'received'
-					}
-				],
-			},
-            {
-				name: 'Davide',
-				avatar: 'img/avatar_8.jpg',
-				visible: true,
-				messages: 
-				[
-					{
-						date: '10/01/2020 15:30:55',
-						message: 'Ciao, andiamo a mangiare la pizza stasera?',
-						status: 'received'
-					}, 
-					{
-						date: '10/01/2020 15:50:00',
-						message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-						status: 'sent'
-			
-					}, 
-					{
-						date: '10/01/2020 15:51:00',
-						message: 'OK!!',
-						status: 'received'
-					}
-				],
-			},
-            {
-				name: 'Davide',
-				avatar: 'img/avatar_8.jpg',
-				visible: true,
-				messages: 
-				[
-					{
-						date: '10/01/2020 15:30:55',
-						message: 'Ciao, andiamo a mangiare la pizza stasera?',
-						status: 'received'
-					}, 
-					{
-						date: '10/01/2020 15:50:00',
-						message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-						status: 'sent'
-			
-					}, 
-					{
-						date: '10/01/2020 15:51:00',
-						message: 'OK!!',
-						status: 'received'
-					}
-				],
-			},
-            {
-				name: 'Davide',
-				avatar: 'img/avatar_8.jpg',
-				visible: true,
-				messages: 
-				[
-					{
-						date: '10/01/2020 15:30:55',
-						message: 'Ciao, andiamo a mangiare la pizza stasera?',
-						status: 'received'
-					}, 
-					{
-						date: '10/01/2020 15:50:00',
-						message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-						status: 'sent'
-			
-					}, 
-					{
-						date: '10/01/2020 15:51:00',
-						message: 'OK!!',
-						status: 'received'
-					}
-				],
-			},
-            {
-				name: 'Davide',
-				avatar: 'img/avatar_8.jpg',
-				visible: true,
-				messages: 
-				[
-					{
-						date: '10/01/2020 15:30:55',
-						message: 'Ciao, andiamo a mangiare la pizza stasera?',
-						status: 'received'
-					}, 
-					{
-						date: '10/01/2020 15:50:00',
-						message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-						status: 'sent'
-			
-					}, 
-					{
-						date: '10/01/2020 15:51:00',
-						message: 'OK!!',
-						status: 'received'
-					}
-				],
-			},
-            {
-				name: 'Davide',
-				avatar: 'img/avatar_8.jpg',
-				visible: true,
-				messages: 
-				[
-					{
-						date: '10/01/2020 15:30:55',
-						message: 'Ciao, andiamo a mangiare la pizza stasera?',
-						status: 'received'
-					}, 
-					{
-						date: '10/01/2020 15:50:00',
-						message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-						status: 'sent'
-			
-					}, 
-					{
-						date: '10/01/2020 15:51:00',
-						message: 'OK!!',
-						status: 'received'
-					}
-				],
-			},
-            {
-				name: 'Davide',
-				avatar: 'img/avatar_8.jpg',
-				visible: true,
-				messages: 
-				[
-					{
-						date: '10/01/2020 15:30:55',
-						message: 'Ciao, andiamo a mangiare la pizza stasera?',
-						status: 'received'
-					}, 
-					{
-						date: '10/01/2020 15:50:00',
-						message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-						status: 'sent'
-			
-					}, 
-					{
-						date: '10/01/2020 15:51:00',
-						message: 'OK!!',
-						status: 'received'
-					}
-				],
-			},
-            
+			}, 
 		],
+		currentIndex : 0,
+		newText : '',
+	},
+	//funzioni di metodi
+	methods : {
+		chatSelezionata (index){
+			this.currentIndex = index
+		},
+		//agggiungi messaggio invio 
+		aggiungiMessaggioInvio(){
+			if (this.newText){
+				this.contacts[this.currentIndex].messages.push ({
+					message : this.newText,
+					date : '',
+					status : 'sent'
+				})
+				this.newText = '';
+				// risposta automatica da parte del bot 
+				answerBot = {
+					date : '',
+					message : 'ok',
+					status : 'received',
+				}
+				// secondi di risposta 
+				setTimeout(() => this.contacts[this.currentIndex].messages.push(answerBot), 1000);
+			}
+		}
+
 	}
-	
-});
+})
+
+
 
 

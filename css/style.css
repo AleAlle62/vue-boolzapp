@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    /* background-color: salmon; */
+}
+
 img {
     height: 50px;
     border-radius: 50%;
@@ -12,15 +16,14 @@ img {
 .box-grande-app {
     height: 85vh;
     min-width: 50%;
-    background-color: salmon;
+    background-color: rgba(234,234,234,255); 
     margin: 50px;
     display: flex;
 }
 
 .navbar {
-    /* background-color: rgba(234,234,234,255); */
-    background-color: blue;
-    height:100%;
+    background-color: rgba(234,234,234,255);
+    height: 700px;
     width: 35%;
 }
 
@@ -32,18 +35,14 @@ img {
     align-items: center;
 }
 
-.navbar-up i {
-    margin: 10px;
-}
 
 .navbar-up .up-left {
     display: flex;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
 
 .navbar-middle {
-    background-color: aquamarine;
+    background-color:#8edafc;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -87,20 +86,23 @@ img {
 }
 
 .navbar-chat {
-    margin: 5px;
     background-color: white;
 }
 
 .lista-vfor{
     overflow-y: scroll;
-    height: 800px;
+    height: 550px;
 }
 .lista-vfor-dentro {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid salmon;
     height: 100px;
+}
+
+.lista-vfor-dentro .data {
+    color: #ccd3e0;
 }
 
 
@@ -108,7 +110,7 @@ img {
 .chatbar {
     height: 99%;
     width: 65%;
-    background-color: lightblue;
+    background-color: rgba(234,234,234,255);
     margin: 5px;
 }
 
@@ -121,11 +123,9 @@ img {
     align-items: center;
 }
 
-.chatbar-top .left {
+.left {
     display: flex;
     align-items: center;
-    margin: 10px;
-    gap: 20px
 }
 
 .chatbar-top i {
@@ -133,48 +133,28 @@ img {
     font-size: 20px;
 }
 
+.profile-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .chatbar-middle {
     height: 83%;
-    background-image: url(https://wallpapercave.com/wp/wp4014381.jpg);
+    background-color: salmon;
     width: 100%;
     object-fit: cover;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 }
-
-.chat {
-    background-color: blue;
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px;
-}
-
-.chat2 {
-    background-color: green;
-    display: flex;
-    justify-content: flex-start;
-    margin: 50px;
-}
-
-.chat p {
-    background-color: lightgreen;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.chat2 p {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;   
-}
-
 
 
 
 
 .chatbar-down {
-    height: 6%;
+    height: 8%;
     background-color: rgba(234,234,234,255);
     display: flex;
     justify-content: space-around;
@@ -189,4 +169,54 @@ img {
 
 .chatbar-down i {
     font-size: 25px;
+}
+
+
+
+.recived {
+    background-color: white;
+	align-self: flex-start;
+    justify-content: space-between;
+    display: flex;
+	margin:1rem;
+	padding: 1rem;
+	width: 20rem;
+	border-radius: 10px;
+    border: 1px solid black;
+}
+
+.data {
+    color: gray;
+    font-size: 10px;
+}
+
+
+.online {
+    color: gray;
+}
+
+.send {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 20px;
+    background-color: rgb(159, 224, 142);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.recived i {
+    display: none;
+}
+
+.send i {
+    color: blue;
 }
