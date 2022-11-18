@@ -4,21 +4,21 @@ new Vue ({
 		contacts: [ 
 			{
 				name: 'Michele',
-				avatar: '//i.pinimg.com/originals/01/86/95/018695b9a644e444531423c2f2899d0c.jpg',
+				avatar: 'img/avatar_1.jpg',
 				visible: true,
 				messages: [
 					{
-						date: '10/01/2020 15:30:55',
+						date: '15:30',
 						message: 'Hai portato a spasso il cane?',
 						status: 'sent'
 					}, 
 					{
-						date: '10/01/2020 15:50:00',
+						date: '15:50',
 						message: 'Ricordati di stendere i panni',
 						status: 'sent'
 					},
 					{
-						date: '10/01/2020 16:15:22',
+						date: '16:15',
 						message: 'Tutto fatto!',
 						status: 'received'
 					} 
@@ -26,23 +26,23 @@ new Vue ({
 			},
 			{
 				name: 'Samuele',
-				avatar: 'https://i.pinimg.com/originals/22/b7/3d/22b73ddfc4cbe22a4a6a4799bb37488b.jpg',
+				avatar: 'img/avatar_2.jpg',
 				visible: true,
 				messages: 
 				[
 					{
-						date: '28/03/2020 10:10:40',
+						date: '10:10',
 						message: 'La Marianna va in campagna',
 						status: 'received'
 					}, 
 					{
-						date: '28/03/2020 10:20:10',
+						date: '10:20',
 						message: 'Sicuro di non aver sbagliato chat?',
 						status: 'sent'
 			
 					}, 
 					{
-						date: '28/03/2020 16:15:22',
+						date: '16:15',
 						message: 'Ah scusa!',
 						status: 'received'
 			
@@ -51,17 +51,17 @@ new Vue ({
 			}, 
 			{
 				name: 'Alessandro B',
-				avatar: 'https://i1.sndcdn.com/artworks-JeZQh6Hbil2Er51B-U9rx3A-t500x500.jpg',
+				avatar: 'img/avatar_3.jpg',
 				visible: true,
 				messages: 
 				[
 					{
-						date: '10/01/2020 15:30:55',
+						date: ' 15:30',
 						message: 'Lo sai che ha aperto una nuova pizzeria?',
 						status: 'sent'
 					}, 
 					{
-						date: '10/01/2020 15:50:00',
+						date: '15:50',
 						message: 'Si, ma preferirei andare al cinema',
 						status: 'received'			
 					} 
@@ -69,17 +69,17 @@ new Vue ({
 			}, 
 			{
 				name: 'Alessandro L',
-				avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMWYNKiidpbCBoI6ixj20DUOGeE0dVaMtHvBKhHMej8gHYkArOVu5tAy9_cYk2cTl2pek&usqp=CAU',
+				avatar: 'img/avatar_4.jpg',
 				visible: true,
 				messages: 
 				[
 					{
-						date: '10/01/2020 15:30:55',
+						date: '15:30',
 						message: 'Ricordati di chiamare la nonna',
 						status: 'sent'		
 					},
 					{
-						date: '10/01/2020 15:50:00',
+						date: '15:50',
 						message: 'Va bene, stasera la sento',
 						status: 'received'
 			
@@ -88,22 +88,22 @@ new Vue ({
 			}, 
 			{
 				name: 'Claudia',
-				avatar: 'https://i.pinimg.com/736x/93/45/89/934589f3aa2f266b260de8bfeb3ae1ab.jpg',
+				avatar: 'img/avatar_5.jpg',
 				visible: true,
 				messages: 
 				[
 					{
-						date: '10/01/2020 15:30:55',
+						date: '15:30',
 						message: 'Ciao Claudia, hai novità?',
 						status: 'sent'		
 					}, 
 					{
-						date: '10/01/2020 15:50:00',
+						date: '15:50',
 						message: 'Non ancora',
 						status: 'received'			
 					}, 
 					{
-						date: '10/01/2020 15:51:00',
+						date: '15:51',
 						message: 'Nessuna nuova, buona nuova',
 						status: 'sent'			
 					}, 
@@ -111,17 +111,17 @@ new Vue ({
 			}, 
 			{
 				name: 'Federica',
-				avatar: 'https://theawesomedaily.com/wp-content/uploads/2022/07/pfp15.png',
+				avatar: 'img/avatar_6.jpg',
 				visible: true,
 				messages: 
 				[
 					{
-						date: '10/01/2020 15:30:55',
+						date: '15:30',
 						message: 'Fai gli auguri a Martina che è il suo compleanno!',
 						status: 'sent'
 					}, 
 					{
-						date: '10/01/2020 15:50:00',
+						date: '15:50',
 						message: 'Grazie per avermelo ricordato, le scrivo subito!',
 						status: 'received'			
 					}
@@ -129,23 +129,23 @@ new Vue ({
 			}, 
 			{
 				name: 'Davide',
-				avatar: 'https://i.pinimg.com/236x/87/63/1c/87631c856eecc16568b7903810312fba.jpg',
+				avatar: 'img/avatar_7.jpg',
 				visible: true,
 				messages: 
 				[
 					{
-						date: '10/01/2020 15:30:55',
+						date: '15:30',
 						message: 'Ciao, andiamo a mangiare la pizza stasera?',
 						status: 'received'
 					}, 
 					{
-						date: '10/01/2020 15:50:00',
+						date: '15:50',
 						message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
 						status: 'sent'
 			
 					}, 
 					{
-						date: '10/01/2020 15:51:00',
+						date: '15:51',
 						message: 'OK!!',
 						status: 'received'
 					}
@@ -163,6 +163,7 @@ new Vue ({
 		},
 		//agggiungi messaggio invio 
 		aggiungiMessaggioInvio(){
+
 			if (this.newText){
 				this.contacts[this.currentIndex].messages.push ({
 					message : this.newText,
@@ -184,7 +185,7 @@ new Vue ({
 		ricercaChat(){
 			this.contacts.forEach(( a, i) => {
 				// condizione per il quale deve uscire se e' incluso o no 
-				if (this.nomeCercato !== this.contacts[i].name.toLowerCase().slice(0, this.nomeCercato.length )){
+				if (this.nomeCercato !== this.contacts[i].name.toLowerCase().slice(0, this.nomeCercato.length)){
 					// console.log(this.ricercaChat)
 					this.contacts[i].visible = false
 				} else {
@@ -192,7 +193,12 @@ new Vue ({
 					this.contacts[i].visible = true
 				}
 			})
-		}
+		},
+
+		//chiudere tutto 
+		fine(){
+			return 0
+		},
 		// finiti i metodi 
 
 

@@ -2,19 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    background-color: salmon;
+    background-color: rgba(0,150,136,255);
+    
 }
 
 img {
-    height: 50px;
+    height: 35px;
     border-radius: 50%;
 }
 
 .box-grande-app {
     height: 85vh;
+    border-radius: 20px;
     min-width: 50%;
     background-color: rgba(234,234,234,255); 
     margin: 50px;
@@ -24,14 +27,37 @@ img {
 .navbar {
     background-color: rgba(234,234,234,255);
     width: 35%;
+    border-radius: 20px;
+}
+
+.icone {
+    display: flex;
+    margin: 5px;
+}
+
+.icone i {
+    display: flex;
+    margin: 10px;
+}
+
+#x {
+    margin-left: 20px;
+    color: red;
 }
 
 .navbar-up {
+    border-radius: 20px;
     display: flex;
     background-color: rgba(234,234,234,255);
     height: 60px;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
+}
+
+.navbar-up img {
+    height: 40px;
+    margin: 10px;
 }
 
 
@@ -42,15 +68,22 @@ img {
 
 .navbar-middle {
     background-color:#8edafc;
-    height: 60px;
+    height: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.navbar-middle a {
+    font-size: 15px;
+    margin: 20px;
+    color: #527a8c;
 }
 
 .navbar-middle i {
     font-size: 20px;
     background-color: white;
+    color: #8edafc;
+    margin-left: 10px;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -59,9 +92,21 @@ img {
     align-items: center;
 }
 
+
 .navbar-down {
-    background-color:  rgba(234,234,234,255);
+    background-color:  white;
     height: 50px;
+}
+
+.navbar-down input{
+    background-color:rgba(234,234,234,255) ;
+    border-radius: 10px;
+}
+
+.navbar-down i {
+    background-color:rgba(234,234,234,255) ;
+    border-radius: 10px;
+    margin-left: 10px;
 }
 
 .inside-navbar-down {
@@ -71,7 +116,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
 .inside-navbar-down i {
@@ -84,20 +128,33 @@ img {
     height: 30px;
 }
 
+
+
+
+
+
 .navbar-chat {
     background-color: white;
 }
 
 .lista-vfor{
     overflow-y: scroll;
-    height: 400px;
+    height: 500px;
 }
-.lista-vfor-dentro {
+.lista-dentro {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border: 1px solid salmon;
     height: 100px;
+    border-top: 1px solid gray;
+}
+
+.lista-dentro:hover {
+    background-color: rgb(184, 183, 183);
+}
+
+.lista-dentro img {
+    height: 50px;
 }
 
 .lista-vfor-dentro .data {
@@ -105,8 +162,30 @@ img {
 }
 
 
+.contatti-dentro {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nome-contatto {
+    font-size: 20px;
+}
+
+.messaggio-contatto {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+
+
+
+
+
 
 .chatbar {
+    border-radius: 20px;
     height: 99%;
     width: 65%;
     background-color: rgba(234,234,234,255);
@@ -114,6 +193,7 @@ img {
 }
 
 .chatbar-top {
+    border-radius: 20px;
     width: 100%;
     background-color:  rgba(234,234,234,255);
     height: 8%;
@@ -125,10 +205,12 @@ img {
 .left {
     display: flex;
     align-items: center;
+    gap: 15px;
+    margin: 10px;
 }
 
 .chatbar-top i {
-    margin: 10px;
+    margin: 25px;
     font-size: 20px;
 }
 
@@ -141,7 +223,7 @@ img {
 
 .chatbar-middle {
     height: 83%;
-    background-image: url(https://wonder-day.com/wp-content/uploads/2022/03/wonder-day-avatar-memes-cats-40.jpg);
+    background-color: salmon;
     width: 100%;
     object-position: center;
     object-fit: contain;
@@ -182,7 +264,6 @@ img {
 	padding: 1rem;
 	width: 20rem;
 	border-radius: 10px;
-    border: 1px solid black;
 }
 
 .data {
@@ -198,12 +279,12 @@ img {
 .send {
     display: flex;
     align-self: flex-end;
+    justify-content: space-between;
     margin-top: 20px;
     background-color: rgb(159, 224, 142);
     padding: 20px;
     border-radius: 10px;
     width: 300px;
-    border: 1px solid black;
 }
 
 
