@@ -4,7 +4,7 @@ new Vue ({
 		contacts: [ 
 			{
 				name: 'Michele',
-				avatar: 'img/avatar_1.jpg',
+				avatar: '//i.pinimg.com/originals/01/86/95/018695b9a644e444531423c2f2899d0c.jpg',
 				visible: true,
 				messages: [
 					{
@@ -26,7 +26,7 @@ new Vue ({
 			},
 			{
 				name: 'Samuele',
-				avatar: 'img/avatar_3.jpg',
+				avatar: 'https://i.pinimg.com/originals/22/b7/3d/22b73ddfc4cbe22a4a6a4799bb37488b.jpg',
 				visible: true,
 				messages: 
 				[
@@ -51,7 +51,7 @@ new Vue ({
 			}, 
 			{
 				name: 'Alessandro B',
-				avatar: 'img/avatar_4.jpg',
+				avatar: 'https://i1.sndcdn.com/artworks-JeZQh6Hbil2Er51B-U9rx3A-t500x500.jpg',
 				visible: true,
 				messages: 
 				[
@@ -69,7 +69,7 @@ new Vue ({
 			}, 
 			{
 				name: 'Alessandro L',
-				avatar: 'img/avatar_5.jpg',
+				avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMWYNKiidpbCBoI6ixj20DUOGeE0dVaMtHvBKhHMej8gHYkArOVu5tAy9_cYk2cTl2pek&usqp=CAU',
 				visible: true,
 				messages: 
 				[
@@ -88,7 +88,7 @@ new Vue ({
 			}, 
 			{
 				name: 'Claudia',
-				avatar: 'img/avatar_6.jpg',
+				avatar: 'https://i.pinimg.com/736x/93/45/89/934589f3aa2f266b260de8bfeb3ae1ab.jpg',
 				visible: true,
 				messages: 
 				[
@@ -111,7 +111,7 @@ new Vue ({
 			}, 
 			{
 				name: 'Federica',
-				avatar: 'img/avatar_7.jpg',
+				avatar: 'https://theawesomedaily.com/wp-content/uploads/2022/07/pfp15.png',
 				visible: true,
 				messages: 
 				[
@@ -129,7 +129,7 @@ new Vue ({
 			}, 
 			{
 				name: 'Davide',
-				avatar: 'img/avatar_8.jpg',
+				avatar: 'https://i.pinimg.com/236x/87/63/1c/87631c856eecc16568b7903810312fba.jpg',
 				visible: true,
 				messages: 
 				[
@@ -154,6 +154,7 @@ new Vue ({
 		],
 		currentIndex : 0,
 		newText : '',
+		nomeCercato : '',
 	},
 	//funzioni di metodi
 	methods : {
@@ -172,13 +173,29 @@ new Vue ({
 				// risposta automatica da parte del bot 
 				answerBot = {
 					date : '',
-					message : 'ok',
+					message : 'okay',
 					status : 'received',
 				}
 				// secondi di risposta 
 				setTimeout(() => this.contacts[this.currentIndex].messages.push(answerBot), 1000);
 			}
+		},
+		//funzione per cercare i nomi nella barra
+		ricercaChat(){
+			this.contacts.forEach(( a, i) => {
+				// condizione per il quale deve uscire se e' incluso o no 
+				if (this.nomeCercato !== this.contacts[i].name.toLowerCase().slice(0, this.nomeCercato.length )){
+					// console.log(this.ricercaChat)
+					this.contacts[i].visible = false
+				} else {
+					// console.log(this.ricercaChat)
+					this.contacts[i].visible = true
+				}
+			})
 		}
+		// finiti i metodi 
+
+
 
 	}
 })

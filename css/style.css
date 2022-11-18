@@ -5,7 +5,7 @@
 }
 
 body {
-    /* background-color: salmon; */
+    background-color: salmon;
 }
 
 img {
@@ -23,7 +23,6 @@ img {
 
 .navbar {
     background-color: rgba(234,234,234,255);
-    height: 700px;
     width: 35%;
 }
 
@@ -91,7 +90,7 @@ img {
 
 .lista-vfor{
     overflow-y: scroll;
-    height: 550px;
+    height: 400px;
 }
 .lista-vfor-dentro {
     display: flex;
@@ -142,9 +141,10 @@ img {
 
 .chatbar-middle {
     height: 83%;
-    background-color: salmon;
+    background-image: url(https://wonder-day.com/wp-content/uploads/2022/03/wonder-day-avatar-memes-cats-40.jpg);
     width: 100%;
-    object-fit: cover;
+    object-position: center;
+    object-fit: contain;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;

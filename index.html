@@ -23,7 +23,7 @@
             <div class="navbar">
                 <!-- profilo -->
                 <div class="navbar-up">
-                    <div class="up-left"><img src="img/avatar_1.jpg">
+                    <div class="up-left"><img src="http://pm1.narvii.com/6915/bcb4141450396aba133211853b2b3670a415f148r1-388-342v2_00.jpg">
                         <h3>Alessio Allegrini</h3>
                     </div>
                     <div class="icone">
@@ -41,7 +41,7 @@
                 <div class="navbar-down">
                     <div class="inside-navbar-down">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="cerca o inizia una nuova chat" class="place">
+                        <input type="text" placeholder="cerca o inizia una nuova chat" class="place" @keyup= "ricercaChat" v-model="nomeCercato">
                     </div>
                 </div>
                 <!-- chat -->
