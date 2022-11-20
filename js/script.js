@@ -155,6 +155,8 @@ new Vue ({
 		currentIndex : 0,
 		newText : '',
 		nomeCercato : '',
+
+		
 	},
 	//funzioni di metodi
 	methods : {
@@ -167,14 +169,14 @@ new Vue ({
 			if (this.newText){
 				this.contacts[this.currentIndex].messages.push ({
 					message : this.newText,
-					date : '',
+					date : new Date().toLocaleTimeString(),
 					status : 'sent'
 				})
 				this.newText = '';
 				// risposta automatica da parte del bot 
 				answerBot = {
-					date : '',
-					message : 'okay',
+					date : new Date().toLocaleTimeString(),
+					message : 'ciao, sono il messaggio automatico',
 					status : 'received',
 				}
 				// secondi di risposta 
@@ -206,6 +208,6 @@ new Vue ({
 	}
 })
 
-
-
-
+if (aggiungiMessaggioInvio = ''){
+	console.log('nulsl')
+}

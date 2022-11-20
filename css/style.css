@@ -15,6 +15,13 @@ img {
     border-radius: 50%;
 }
 
+i:hover {
+    background-color: gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 .box-grande-app {
     height: 85vh;
     border-radius: 20px;
@@ -24,11 +31,6 @@ img {
     display: flex;
 }
 
-.navbar {
-    background-color: rgba(234,234,234,255);
-    width: 35%;
-    border-radius: 20px;
-}
 
 .icone {
     display: flex;
@@ -39,6 +41,8 @@ img {
     display: flex;
     margin: 10px;
 }
+
+
 
 #x {
     margin-left: 20px;
@@ -128,10 +132,10 @@ img {
     height: 30px;
 }
 
-
-
-
-
+.navbar-down-down { 
+    height: 60vh;
+    /* background-color: blue; */
+}
 
 .navbar-chat {
     background-color: white;
@@ -139,7 +143,8 @@ img {
 
 .lista-vfor{
     overflow-y: scroll;
-    height: 500px;
+    height: 425px;
+    border-radius: 10px;
 }
 .lista-dentro {
     display: flex;
@@ -179,11 +184,6 @@ img {
 }
 
 
-
-
-
-
-
 .chatbar {
     border-radius: 20px;
     height: 99%;
@@ -201,6 +201,12 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+
+.icone-2 {
+
+}
+
+
 
 .left {
     display: flex;
@@ -224,7 +230,6 @@ img {
 .chatbar-middle {
     height: 83%;
     background-color: salmon;
-    width: 100%;
     object-position: center;
     object-fit: contain;
     display: flex;
