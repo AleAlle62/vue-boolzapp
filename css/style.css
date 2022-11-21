@@ -7,7 +7,9 @@
 
 body {
     background-color: rgba(0,150,136,255);
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 img {
@@ -24,8 +26,8 @@ i:hover {
 
 .box-grande-app {
     height: 85vh;
+    width: 80vw;
     border-radius: 20px;
-    min-width: 50%;
     background-color: rgba(234,234,234,255); 
     margin: 50px;
     display: flex;
@@ -47,6 +49,12 @@ i:hover {
 #x {
     margin-left: 20px;
     color: red;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar-up {
@@ -139,11 +147,13 @@ i:hover {
 
 .navbar-chat {
     background-color: white;
+    flex: 1 0 0;
+    overflow-y: scroll;
+    border-radius: 10px;
 }
 
 .lista-vfor{
-    overflow-y: scroll;
-    height: 425px;
+    height: 100%;
     border-radius: 10px;
 }
 .lista-dentro {
@@ -229,7 +239,7 @@ i:hover {
 
 .chatbar-middle {
     height: 83%;
-    background-image: url(/img/dark.jpeg);
+    background-color: salmon;
     object-position: center;
     object-fit: contain;
     display: flex;

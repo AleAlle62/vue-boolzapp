@@ -189,12 +189,12 @@ new Vue ({
 		ricercaChat(){
 			this.contacts.forEach(( a, i) => {
 				// condizione per il quale deve uscire se e' incluso o no 
-				if (this.nomeCercato !== this.contacts[i].name.toLowerCase().slice(0, this.nomeCercato.length)){
-					// console.log(this.ricercaChat)
-					this.contacts[i].visible = false
-				} else {
+				if (this.contacts[i].name.toLowerCase().includes(this.nomeCercato)){
 					// console.log(this.ricercaChat)
 					this.contacts[i].visible = true
+				} else {
+					// console.log(this.ricercaChat)
+					this.contacts[i].visible = false
 				}
 			})
 		},
