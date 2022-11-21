@@ -166,8 +166,10 @@ new Vue ({
 		//agggiungi messaggio invio 
 		aggiungiMessaggioInvio(){
 
+			let receivedIndex = this.currentIndex
+
 			if (this.newText){
-				this.contacts[this.currentIndex].messages.push ({
+				this.contacts[receivedIndex].messages.push ({
 					message : this.newText,
 					date : new Date().toLocaleTimeString(),
 					status : 'sent'
@@ -180,7 +182,7 @@ new Vue ({
 					status : 'received',
 				}
 				// secondi di risposta 
-				setTimeout(() => this.contacts[this.currentIndex].messages.push(answerBot), 1000);
+				setTimeout(() => this.contacts[receivedIndex].messages.push(answerBot), 1000);
 			}
 		},
 		//funzione per cercare i nomi nella barra
@@ -207,7 +209,3 @@ new Vue ({
 
 	}
 })
-
-if (aggiungiMessaggioInvio = ''){
-	console.log('nulsl')
-}

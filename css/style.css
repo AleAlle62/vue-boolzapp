@@ -229,7 +229,7 @@ i:hover {
 
 .chatbar-middle {
     height: 83%;
-    background-color: salmon;
+    background-image: url(/img/dark.jpeg);
     object-position: center;
     object-fit: contain;
     display: flex;

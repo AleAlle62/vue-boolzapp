@@ -116,7 +116,7 @@
                         <div class = "chat" v-for = "( contact , i ) in contacts" v-if = " i === currentIndex ">
                             <div v-for = " message in contact.messages " :class = "message.status ==='received'? 'recived':'send'" >
                                 <div>{{message.message}}</div>
-                                <div class="data">{{ message.date}}</div>                           
+                                <div class="data">{{ message.date}}</div> 
                             </div>
                         </div>           
                     </div>
